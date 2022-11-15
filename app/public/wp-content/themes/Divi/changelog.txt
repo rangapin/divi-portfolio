@@ -1,3 +1,73 @@
+version 4.19 ( updated 11-03-2022 )
+- Added Divi Code Snippets Library with Divi Cloud support.
+- Fixed issue with Theme Builder templates not working when The Events Calendar plugin is active.
+- Fixed some issues related to Secondary Navigation menu in Customizer and Frontend.
+- Fixed Global Colors import and export in Theme Builder.
+	* cloud/cloud-app.php
+	* cloud/i18n/library.php
+	* common/admin.php
+	* common/i18n/library.php
+	* common/init.php
+	* common/lib/config.js
+	* common/lib/i18n.js
+	* common/lib/local-library.js
+	* common/lib/request.js
+	* core/admin/css/core.css
+	* core/admin/fonts/epanel/code-snippet.svg
+	* core/admin/fonts/epanel/code-snippet.ttf
+	* core/admin/fonts/epanel/code-snippet.woff
+	* core/code-snippets/CodeSnippetsLibrary.php
+	* core/code-snippets/api.php
+	* core/code-snippets/app/boot.js
+	* core/code-snippets/app/lib/capabilities.js
+	* core/code-snippets/app/lib/code-snippets-library.js
+	* core/code-snippets/app/lib/config.js
+	* core/code-snippets/app/lib/constants.js
+	* core/code-snippets/app/lib/i18n.js
+	* core/code-snippets/app/lib/request.js
+	* core/code-snippets/app/store/code-snippets-library/actions.js
+	* core/code-snippets/app/store/code-snippets-library/computed.js
+	* core/code-snippets/app/store/code-snippets-library/factories.js
+	* core/code-snippets/app/store/code-snippets-library/module.js
+	* core/code-snippets/app/store/code-snippets-library/providers.js
+	* core/code-snippets/app/store/code-snippets-library/sequences.js
+	* core/code-snippets/app/store/edit/actions.js
+	* core/code-snippets/app/store/edit/module.js
+	* core/code-snippets/app/store/edit/sequences.js
+	* core/code-snippets/app/store/index.js
+	* core/code-snippets/code-snippets-app.php
+	* core/code-snippets/code-snippets-library.php
+	* core/code-snippets/code-snippets.php
+	* core/code-snippets/constants.php
+	* core/code-snippets/post/taxonomy/CodeSnippetType.php
+	* core/code-snippets/post/type/CodeSnippet.php
+	* core/components/Portability.php
+	* core/components/api/email/HubSpot.php
+	* core/components/cache/Directory.php
+	* core/functions.php
+	* core/i18n/library.php
+	* core/init.php
+	* core/webpack.config.js
+	* epanel/core_functions.php
+	* epanel/css/panel.css
+	* epanel/js/functions-init.js
+	* functions.php
+	* includes/builder/core.php
+	* includes/builder/feature/dynamic-assets/class-dynamic-assets.php
+	* includes/builder/feature/gutenberg/blocks/Layout.php
+	* includes/builder/feature/local-library.php
+	* includes/builder/framework.php
+	* includes/builder/frontend-builder/assets.php
+	* includes/builder/frontend-builder/bundle.js
+	* includes/builder/frontend-builder/helpers.php
+	* includes/builder/frontend-builder/i18n/portability.php
+	* includes/builder/frontend-builder/i18n/theme-builder.php
+	* includes/builder/frontend-builder/theme-builder/constants.php
+	* includes/builder/frontend-builder/theme-builder/local-library.php
+	* includes/builder/plugin-compat/the-events-calendar.php
+	* includes/builder/plugin-compat/yith-woocommerce-dynamic-pricing-and-discounts-premium.php
+	* js/src/theme-customizer.js
+
 version 4.18.1 ( updated 10-27-2022 )
 - Introduced confirmation modal before user clear Divi Layout block content.
 - Fixed errors on Divi Layout block when opening Site Editor page.

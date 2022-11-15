@@ -4669,6 +4669,7 @@ function et_pb_register_builder_portabilities() {
 		// phpcs:disable WordPress.Security.NonceVerification -- This function does not change any state, and is therefore not susceptible to CSRF.
 		// Register the Roles Editor portability.
 		$pb_roles = array(
+			'title'  => esc_html__( 'Import & Export Roles', 'et_builder' ),
 			'name'   => esc_html__( 'Divi Role Editor Settings', 'et_builder' ),
 			'type'   => 'options',
 			'target' => 'et_pb_role_settings',
@@ -4681,15 +4682,17 @@ function et_pb_register_builder_portabilities() {
 	if ( current_user_can( 'edit_posts' ) ) {
 		// Register the Builder individual layouts portability.
 		$args = array(
-			'name' => esc_html__( 'Divi Builder Layout', 'et_builder' ),
-			'type' => 'post',
-			'view' => ( function_exists( 'et_builder_should_load_framework' ) && et_builder_should_load_framework() ),
+			'title' => esc_html__( 'Import & Export Layouts', 'et_builder' ),
+			'name'  => esc_html__( 'Divi Builder Layout', 'et_builder' ),
+			'type'  => 'post',
+			'view'  => ( function_exists( 'et_builder_should_load_framework' ) && et_builder_should_load_framework() ),
 		);
 		et_core_portability_register( 'et_builder', $args );
 
 		// phpcs:disable WordPress.Security.NonceVerification -- This function does not change any state, and is therefore not susceptible to CSRF.
 		// Register the Builder Layouts Post Type portability.
 		$layouts = array(
+			'title'  => esc_html__( 'Import & Export Layouts', 'et_builder' ),
 			'name'   => esc_html__( 'Divi Builder Layouts', 'et_builder' ),
 			'type'   => 'post_type',
 			'target' => ET_BUILDER_LAYOUT_POST_TYPE,
